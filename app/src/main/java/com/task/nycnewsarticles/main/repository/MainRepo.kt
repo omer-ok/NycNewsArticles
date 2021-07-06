@@ -16,7 +16,7 @@ constructor(private val mainApi: MainApi) {
         emit(DataState.Loading)
         try {
 
-            val reponse: Articles = mainApi.getArticles("wzXI9F5g6tpL9FSXqE9xlyde0Lk006eo")
+            val reponse: Articles = mainApi.getArticles("OGOPAGvYGwEALz56ZHsc9VhjLZSblK3I")
             emit(DataState.Success(reponse))
         } catch (e: Exception) {
             Log.i("Excep",e.toString())
