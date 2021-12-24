@@ -2,6 +2,7 @@ package com.task.nycnewsarticles.main.di
 
 import com.task.nycnewsarticles.main.network.MainApi
 import com.task.nycnewsarticles.main.repository.MainRepo
+import com.task.nycnewsarticles.main.vm.ArticlesListViewModel
 import com.task.nycnewsarticles.main.vm.MainViewModel
 import dagger.Module
 import dagger.Provides
@@ -36,10 +37,10 @@ object MainActivityModule {
 
     @Singleton
     @Provides
-    fun provideMainViewModel(
+    fun provideArticlesListViewModel(
         mainRepo: MainRepo
-    ): MainViewModel {
-        return MainViewModel(mainRepo)
+    ): ArticlesListViewModel {
+        return ArticlesListViewModel(mainRepo)
     }
 
 }

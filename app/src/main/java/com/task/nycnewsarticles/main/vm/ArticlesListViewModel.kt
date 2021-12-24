@@ -21,7 +21,7 @@ import kotlinx.coroutines.launch
 @ExperimentalCoroutinesApi
 @FlowPreview
 @InternalCoroutinesApi
-class MainViewModel
+class ArticlesListViewModel
 constructor(
     private val mainRepo: MainRepo
 ): ViewModel() {

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/articles_nav_graph"
+    app:startDestination="@id/articlesListFragment">
+
+    <fragment
+        android:id="@+id/articlesListFragment"
+        android:name="com.task.nycnewsarticles.main.ui.ArticlesListFragment"
+        android:label="ArticlesListFragment" >
+        <action
+            android:id="@+id/action_articlesListFragment_to_articleDetailFragment"
+            app:destination="@id/articleDetailFragment" />
+        <argument
+            android:name="articleImage"
+            app:argType="string"
+            android:defaultValue=" " />
+        <argument
+            android:name="articleTitle"
+            app:argType="string"
+            android:defaultValue=" " />
+        <argument
+            android:name="articleAbstract"
+            app:argType="string"
+            android:defaultValue=" " />
+        <argument
+            android:name="articlePublishedDate"
+            app:argType="string"
+            android:defaultValue=" " />
+        <argument
+            android:name="byline"
+            app:argType="string"
+            android:defaultValue=" " />
+    </fragment>
+    <fragment
+        android:id="@+id/articleDetailFragment"
+        android:name="com.task.nycnewsarticles.main.ui.ArticleDetailFragment"
+        android:label="ArticleDetailFragment" />
+</navigation>

@@ -17,19 +17,6 @@ import kotlinx.coroutines.InternalCoroutinesApi
 @AndroidEntryPoint
 class ArticleDetailFragment : BaseFragment(R.layout.fragment_article_detail) {
 
-    companion object {
-        fun newInstance(image:String,title: String,abstract:String,time:String,authoreName:String): ArticleDetailFragment {
-            val fragment = ArticleDetailFragment()
-            val bundle= Bundle()
-            bundle.putString("image",image)
-            bundle.putString("title",title)
-            bundle.putString("abstract",abstract)
-            bundle.putString("time",time)
-            bundle.putString("authoreName",authoreName)
-            fragment.arguments = bundle
-            return fragment
-        }
-    }
     lateinit var mImage:String
     lateinit var mTitle:String
     lateinit var mAbstract:String
