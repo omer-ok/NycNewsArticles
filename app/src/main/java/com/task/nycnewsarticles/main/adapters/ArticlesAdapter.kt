@@ -56,7 +56,11 @@ class ArticlesAdapter(var context: Context ,var articlesListFragment: ArticlesLi
 
         holder.itemView.setOnClickListener {
             val bundle= Bundle()
-            bundle.putString("image",articleImage)
+            if(articles[position].media.size>0){
+                bundle.putString("image",articles[position].media.get(0).mediametadata.get(0).url)
+            }else{
+                bundle.putString("image"," ")
+            }
             bundle.putString("title",articles[position].title)
             bundle.putString("abstract",articles[position].abstract)
             bundle.putString("time",articles[position].published_date)
