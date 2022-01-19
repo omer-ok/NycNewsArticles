@@ -28,6 +28,7 @@ import kotlinx.coroutines.InternalCoroutinesApi
 @ExperimentalCoroutinesApi
 @InternalCoroutinesApi
 abstract class BaseAdapter(var context1: Context) :RecyclerView.Adapter<RecyclerView.ViewHolder>(){
+
     fun String.toUrl():String{
         return BuildConfig.MEDIA_URL+this
     }

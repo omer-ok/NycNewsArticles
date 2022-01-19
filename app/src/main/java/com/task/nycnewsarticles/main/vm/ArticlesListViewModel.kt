@@ -25,6 +25,7 @@ class ArticlesListViewModel
 constructor(
     private val mainRepo: MainRepo
 ): ViewModel() {
+    
     val userIntent = Channel<MainScreenIntent>(Channel.UNLIMITED)
 
     private val _nycArticlesResponse: MutableLiveData<DataState<Articles>> = MutableLiveData()

@@ -17,6 +17,7 @@ import kotlinx.coroutines.InternalCoroutinesApi
 @AndroidEntryPoint
 class ArticleDetailFragment : BaseFragment(R.layout.fragment_article_detail) {
 
+
     lateinit var mImage:String
     lateinit var mTitle:String
     lateinit var mAbstract:String

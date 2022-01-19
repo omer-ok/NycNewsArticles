@@ -28,6 +28,8 @@ import javax.inject.Inject
 @AndroidEntryPoint
 class ArticlesListFragment : BaseFragment(R.layout.articles_list_fragment) {
 
+
+
     companion object {
         fun newInstance() = ArticlesListFragment()
     }

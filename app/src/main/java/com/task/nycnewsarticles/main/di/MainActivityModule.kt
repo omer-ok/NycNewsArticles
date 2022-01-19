@@ -3,7 +3,6 @@ package com.task.nycnewsarticles.main.di
 import com.task.nycnewsarticles.main.network.MainApi
 import com.task.nycnewsarticles.main.repository.MainRepo
 import com.task.nycnewsarticles.main.vm.ArticlesListViewModel
-import com.task.nycnewsarticles.main.vm.MainViewModel
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -20,6 +19,8 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 object MainActivityModule {
+
+
 
     @Singleton
     @Provides

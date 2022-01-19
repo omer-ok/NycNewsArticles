@@ -22,6 +22,7 @@ import java.util.*
 @ExperimentalCoroutinesApi
 @InternalCoroutinesApi
 open class BaseFragment(layout:Int):Fragment(layout){
+
     var country = ""
     var city = ""
     var loadingDialog:Dialog?=null

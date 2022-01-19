@@ -15,6 +15,7 @@ import kotlinx.coroutines.InternalCoroutinesApi
 @ExperimentalCoroutinesApi
 @InternalCoroutinesApi
 abstract class BaseActivity : AppCompatActivity(){
+
     private var loadingDialog:Dialog?=null
     fun loading(){
         loadingDialog = Dialog(this, R.style.Theme_Design_BottomSheetDialog)

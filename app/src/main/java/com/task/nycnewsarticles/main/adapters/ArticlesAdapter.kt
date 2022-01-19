@@ -25,6 +25,7 @@ import kotlinx.coroutines.InternalCoroutinesApi
 @InternalCoroutinesApi
 class ArticlesAdapter(var context: Context ,var articlesListFragment: ArticlesListFragment, var  articles: ArrayList<Result>
 ) : BaseAdapter(context) {
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.articles_item, parent, false)
         return ViewHolder(view)
