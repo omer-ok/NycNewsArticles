@@ -10,6 +10,7 @@
 4- Kotlin Coroutines
 5- Glide For Image Loading
 6- MVI(Model View Intent)
+7- Navigation Component
 
 #The app has following packages:
 
